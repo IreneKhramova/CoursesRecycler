@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.simbirsoft.coursesrecycler.ui.MainActivity">
+    tools:context="com.simbirsoft.coursesrecycler.MainActivity">
 
     <ProgressBar
         android:id="@+id/progress_bar"
