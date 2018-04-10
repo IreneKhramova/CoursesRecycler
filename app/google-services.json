@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "834765917339",
+    "firebase_url": "https://simbirsoftcourses-5f969.firebaseio.com",
+    "project_id": "simbirsoftcourses-5f969",
+    "storage_bucket": "simbirsoftcourses-5f969.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834765917339:android:81b99ac599c5a691",
+        "android_client_info": {
+          "package_name": "com.simbirsoft.coursesrecycler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834765917339-aa7fmn1htpoimjrib24rpch64ibnn5dr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simbirsoft.coursesrecycler",
+            "certificate_hash": "504bc8b0477b922bf699e200b27f0a71f7668855"
+          }
+        },
+        {
+          "client_id": "834765917339-fh4jmo54vir5cairf5g684doqb90n0mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_UXC5I9MSMxxy9Grp3Ggi5pDSiqkfTHc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834765917339-fh4jmo54vir5cairf5g684doqb90n0mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834765917339:android:f33507f4522f806d",
+        "android_client_info": {
+          "package_name": "com.simbirsoft.firebasechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834765917339-3ddqkpau497frcoqh5j58ij59kj7qe29.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simbirsoft.firebasechat",
+            "certificate_hash": "504bc8b0477b922bf699e200b27f0a71f7668855"
+          }
+        },
+        {
+          "client_id": "834765917339-fh4jmo54vir5cairf5g684doqb90n0mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_UXC5I9MSMxxy9Grp3Ggi5pDSiqkfTHc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834765917339-fh4jmo54vir5cairf5g684doqb90n0mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834765917339:android:011e2c115660e65b",
+        "android_client_info": {
+          "package_name": "com.simbirsoft.simbirsoftcourses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834765917339-2fq1lj33oju427fa658nn8vsj7m8lgkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simbirsoft.simbirsoftcourses",
+            "certificate_hash": "504bc8b0477b922bf699e200b27f0a71f7668855"
+          }
+        },
+        {
+          "client_id": "834765917339-fh4jmo54vir5cairf5g684doqb90n0mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_UXC5I9MSMxxy9Grp3Ggi5pDSiqkfTHc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834765917339-fh4jmo54vir5cairf5g684doqb90n0mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
