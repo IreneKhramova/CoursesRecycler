@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CoursesRecycler</string>
+    <string name="hint_enter_a_message">Введите текст</string>
+    <string name="messages_list_title">Сообщения</string>
 </resources>
