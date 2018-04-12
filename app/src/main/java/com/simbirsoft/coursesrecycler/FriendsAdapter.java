@@ -1,6 +1,5 @@
 package com.simbirsoft.coursesrecycler;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -67,18 +66,14 @@ public class FriendsAdapter extends
             message.setText(friend.getMessage());
             name.setText(friend.getName());
             date.setText(friend.getDate());
-            messages_badge.setText(friend.getMessages_badge());
+            messages_badge.setText(friend.getId().toString());
             Picasso.get().load(friend.getAvatar()).into(avatar);
         }
 
         @Override
         public void onClick(View v) {
             //переход в др активити
-            //Intent intent = new Intent(getActivity(),MessagesListActivity.class);
-            //startActivity(intent);
-          //  MessagesListActivity.start();
-
-            final Context a = v.getContext();//getActivity();
+            final Context a = v.getContext();
             Intent intent = new Intent(a, MessagesListActivity.class);
             a.startActivity(intent);
         }

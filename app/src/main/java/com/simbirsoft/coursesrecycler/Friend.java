@@ -1,11 +1,10 @@
 package com.simbirsoft.coursesrecycler;
 
-import android.net.Uri;
-
 // TODO: добавить все необходимые поля в класс
 public class Friend {
     private String avatar;
-    private String messages_badge;
+    //private String id;//messages_badge;
+    private Long id;
     private String date;
     private String message;
     private String name;
@@ -22,8 +21,8 @@ public class Friend {
         return name;
     }
 
-    public String getMessages_badge() {
-        return messages_badge;
+    public Long getId() {
+        return id;/*messages_badge;*/
     }
 
     public String getAvatar() {
