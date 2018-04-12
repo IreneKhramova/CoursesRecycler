@@ -50,8 +50,8 @@ public class MessagesListActivity extends AppCompatActivity {
         final MessagesRepository messagesRepository = new MessagesRepository();
         messagesRepository.loadMessages(new MessagesRepository.MessagesLoadListener() {
             @Override
-            public void onMessagesReceived(List<Message> messages) {
-                adapter.addToEnd(messages, false);
+            public void onMessagesReceived(Message messages) {
+                adapter.addToStart(messages, true);
             }
 
             @Override
@@ -60,15 +60,14 @@ public class MessagesListActivity extends AppCompatActivity {
             }
         });
 
-        //here?
         input.setInputListener(new MessageInput.InputListener() {
             @Override
             public boolean onSubmit(CharSequence input) {
                 //validate and send
+                //adapter.addToStart(message, true);
 
                 messagesRepository.addMessage(input.toString());
 
-                //adapter.addToStart(message, true);
                 return true;
             }
         });

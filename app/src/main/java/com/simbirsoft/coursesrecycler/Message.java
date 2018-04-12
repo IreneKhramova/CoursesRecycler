@@ -2,6 +2,7 @@ package com.simbirsoft.coursesrecycler;
 
 import com.google.firebase.database.PropertyName;
 import com.stfalcon.chatkit.commons.models.IMessage;
+import com.stfalcon.chatkit.commons.models.IUser;
 
 import java.util.Date;
 
@@ -32,7 +33,7 @@ public class Message implements IMessage{
     }
 
     @Override
-    public Author getUser() {
+    public IUser getUser() {
         return user;
     }
 

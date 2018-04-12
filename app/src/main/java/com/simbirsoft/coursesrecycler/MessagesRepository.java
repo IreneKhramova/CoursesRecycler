@@ -2,6 +2,7 @@ package com.simbirsoft.coursesrecycler;
 
 import android.support.annotation.NonNull;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,7 +21,7 @@ public class MessagesRepository {
     private DatabaseReference myRef = database.getReference("messages");
 
     public void loadMessages(@NonNull final MessagesRepository.MessagesLoadListener messagesLoadListener) {
-        myRef.addValueEventListener(new ValueEventListener() {
+        /*myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 messagesLoadListener.onMessagesReceived(toMessageList(dataSnapshot));
@@ -30,11 +31,37 @@ public class MessagesRepository {
             public void onCancelled(DatabaseError databaseError) {
                 messagesLoadListener.onError(databaseError.toException());
             }
+        });*/
+        myRef.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                messagesLoadListener.onMessagesReceived(toMessageList(dataSnapshot).get(0));
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
         });
     }
 
     public interface MessagesLoadListener{
-        void onMessagesReceived(List<Message> messages);
+        void onMessagesReceived(Message messages);
         void onError(Throwable error);
     }
 
@@ -48,9 +75,12 @@ public class MessagesRepository {
     private List<Message> toMessageList(DataSnapshot dataSnapshot) {
         List<Message> messages = new ArrayList<>();
 
-        for (DataSnapshot snapshot: dataSnapshot.getChildren()) {
-            Message msg = new Message();
-            HashMap s = (HashMap) snapshot.child("createdAt").getValue();
+        Message message = dataSnapshot.getValue(Message.class);
+        messages.add(message);
+
+        ////for (DataSnapshot snapshot: dataSnapshot.getChildren()) {
+          //  Message msg = new Message();
+            /*HashMap s = (HashMap) snapshot.child("createdAt").getValue();
 
             Date date = new Date((long) s.get("time"));
 
@@ -59,10 +89,11 @@ public class MessagesRepository {
             msg.setId((String) snapshot.child("id").getValue());
             msg.setText((String) snapshot.child("text").getValue());
             Author user = snapshot.child("user").getValue(Author.class);
-            msg.setUser(user);
+            msg.setUser(user);*/
+            //msg=snapshot.getValue(Message.class);
 
-            messages.add(msg);
-        }
+            //messages.add(msg);
+        //}
 
         return messages;
     }
