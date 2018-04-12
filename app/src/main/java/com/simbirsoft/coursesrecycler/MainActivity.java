@@ -1,4 +1,4 @@
-package com.simbirsoft.coursesrecycler.ui;
+package com.simbirsoft.coursesrecycler;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,5 +11,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //TODO: добавить сюда кода инициализации ресайклера
     }
 }
